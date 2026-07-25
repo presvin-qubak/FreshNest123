@@ -1,0 +1,599 @@
+
+/* =========================
+   Settings Page
+========================= */
+
+.settings-page {
+  min-height: 100vh;
+  background: #f7faf7;
+  padding-bottom: 80px;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.settings-header {
+  position: relative;
+
+  background: linear-gradient(
+    135deg,
+    #17062b,
+    #3c096c
+  );
+
+  color: white;
+
+  text-align: center;
+
+  padding: 55px 60px;
+}
+
+.settings-header-icon {
+  width: 55px;
+  height: 55px;
+
+  margin: 0 auto 15px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+}
+
+.settings-header h1 {
+  margin: 0 0 8px;
+
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.settings-header p {
+  margin: 0;
+
+  font-size: 16px;
+
+  opacity: 0.85;
+}
+
+
+/* =========================
+   Close Button
+========================= */
+
+.settings-close {
+  position: absolute;
+
+  top: 20px;
+  right: 25px;
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  color: white;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  z-index: 10;
+}
+
+.settings-close:hover {
+  background: rgba(255, 255, 255, 0.3);
+
+  transform: rotate(90deg) scale(1.05);
+}
+
+
+/* =========================
+   Main Container
+========================= */
+
+.settings-container {
+  width: 90%;
+  max-width: 900px;
+
+  margin: 40px auto;
+}
+
+
+/* =========================
+   Settings Section
+========================= */
+
+.settings-section {
+  margin-bottom: 35px;
+}
+
+.settings-section h2 {
+  margin: 0 0 15px;
+
+  color: #222;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   Settings Card
+========================= */
+
+.settings-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  background: white;
+
+  padding: 20px;
+
+  margin-bottom: 14px;
+
+  border-radius: 16px;
+
+  border: 1px solid #eeeeee;
+
+  box-shadow:
+    0 7px 25px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+.settings-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   Settings Icon
+========================= */
+
+.settings-icon {
+  width: 46px;
+  height: 46px;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  background: #f0fdf4;
+
+  color: #15803d;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 19px;
+}
+
+
+/* =========================
+   Text
+========================= */
+
+.settings-text {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.settings-text h3 {
+  margin: 0 0 5px;
+
+  color: #222;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+.settings-text p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   Manage Button
+========================= */
+
+.settings-action {
+  flex-shrink: 0;
+
+  padding: 9px 16px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #f0fdf4;
+
+  color: #15803d;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.settings-action:hover {
+  background: #15803d;
+
+  color: white;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================
+   Toggle Switch
+========================= */
+
+.switch {
+  position: relative;
+
+  display: inline-block;
+
+  width: 48px;
+  height: 26px;
+
+  flex-shrink: 0;
+}
+
+.switch input {
+  opacity: 0;
+
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+
+  inset: 0;
+
+  cursor: pointer;
+
+  background: #d1d5db;
+
+  border-radius: 30px;
+
+  transition: 0.3s;
+}
+
+.slider::before {
+  content: "";
+
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+
+  left: 3px;
+  top: 3px;
+
+  background: white;
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.15);
+
+  transition: 0.3s;
+}
+
+.switch input:checked + .slider {
+  background: #22c55e;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(22px);
+}
+
+
+/* =========================
+   Language Select
+========================= */
+
+.language-select {
+  flex-shrink: 0;
+
+  min-width: 120px;
+
+  padding: 9px 12px;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 9px;
+
+  background: #fafafa;
+
+  color: #333;
+
+  font-size: 13px;
+
+  outline: none;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.language-select:focus {
+  border-color: #22c55e;
+
+  box-shadow:
+    0 0 0 3px rgba(34, 197, 94, 0.1);
+}
+
+
+/* =========================
+   Logout Section
+========================= */
+
+.logout-section {
+  margin-top: 40px;
+
+  padding-top: 25px;
+
+  border-top: 1px solid #dddddd;
+}
+
+.settings-logout {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 14px 20px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #fef2f2;
+
+  color: #dc2626;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.settings-logout:hover {
+  background: #dc2626;
+
+  color: white;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(220, 38, 38, 0.2);
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 768px) {
+
+  .settings-header {
+    padding: 50px 55px;
+  }
+
+  .settings-header h1 {
+    font-size: 32px;
+  }
+
+  .settings-container {
+    width: 92%;
+
+    margin-top: 25px;
+  }
+
+  .settings-card {
+    padding: 18px;
+  }
+
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 480px) {
+
+  .settings-header {
+    padding: 45px 50px 40px;
+  }
+
+  .settings-header-icon {
+    width: 48px;
+    height: 48px;
+
+    font-size: 20px;
+  }
+
+  .settings-header h1 {
+    font-size: 28px;
+  }
+
+  .settings-header p {
+    font-size: 14px;
+  }
+
+  .settings-close {
+    top: 15px;
+    right: 15px;
+
+    width: 36px;
+    height: 36px;
+
+    font-size: 17px;
+  }
+
+  .settings-container {
+    width: 92%;
+  }
+
+  .settings-section h2 {
+    font-size: 18px;
+  }
+
+  .settings-card {
+    gap: 12px;
+
+    padding: 15px;
+
+    border-radius: 14px;
+  }
+
+  .settings-icon {
+    width: 40px;
+    height: 40px;
+
+    font-size: 16px;
+
+    border-radius: 10px;
+  }
+
+  .settings-text h3 {
+    font-size: 14px;
+  }
+
+  .settings-text p {
+    font-size: 12px;
+  }
+
+  .settings-action {
+    padding: 8px 11px;
+
+    font-size: 12px;
+  }
+
+  .language-select {
+    min-width: 95px;
+
+    padding: 8px;
+
+    font-size: 12px;
+  }
+
+  .switch {
+    width: 44px;
+    height: 24px;
+  }
+
+  .slider::before {
+    width: 18px;
+    height: 18px;
+  }
+
+  .switch input:checked + .slider::before {
+    transform: translateX(20px);
+  }
+
+}
+
+/* =========================
+   Language Dropdown
+========================= */
+
+.language-dropdown {
+  position: relative;
+  min-width: 150px;
+}
+
+.language-select {
+  width: 100%;
+  min-width: 150px;
+
+  padding: 11px 35px 11px 14px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  background: white;
+  color: #222;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.language-select:hover {
+  border-color: #22c55e;
+}
+
+.language-select:focus {
+  border-color: #22c55e;
+
+  box-shadow:
+    0 0 0 3px rgba(34, 197, 94, 0.12);
+}
+
+/* Dropdown options */
+
+.language-select option {
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .language-select {
+    min-width: 120px;
+    font-size: 13px;
+  }
+
+}

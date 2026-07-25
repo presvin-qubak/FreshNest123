@@ -1,0 +1,137 @@
+.offer {
+  padding: 60px 8%;
+  background: #f8f9fa;
+  min-height: 80vh;
+}
+
+
+.offer h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2e7d32;
+  margin-bottom: 40px;
+}
+
+
+/* Cards */
+
+.offer-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+}
+
+
+.offer-card {
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,0.08);
+
+  transition: 0.3s ease;
+}
+
+
+.offer-card:hover {
+
+  transform: translateY(-8px);
+
+}
+
+
+/* Title */
+
+.offer-card h2 {
+
+  color:#333;
+
+  font-size:22px;
+
+}
+
+
+/* Discount */
+
+.offer-card h3 {
+
+  color:#22c55e;
+
+  font-size:35px;
+
+  margin:15px 0;
+
+}
+
+
+/* Description */
+
+.offer-card p {
+
+  color:#666;
+
+  line-height:1.6;
+
+}
+
+
+/* Button */
+
+.offer-card button {
+
+  margin-top:20px;
+
+  padding:12px 25px;
+
+  border:none;
+
+  border-radius:30px;
+
+  background:#22c55e;
+
+  color:white;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:.3s;
+
+}
+
+
+.offer-card button:hover {
+
+  background:#15803d;
+
+}
+
+
+/* Responsive */
+
+@media(max-width:900px){
+
+  .offer-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+  }
+
+}
+
+
+@media(max-width:600px){
+
+  .offer-container{
+
+    grid-template-columns:1fr;
+
+  }
+
+}

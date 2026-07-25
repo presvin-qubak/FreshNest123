@@ -1,0 +1,169 @@
+
+/* =================================
+   GLOBAL DARK MODE
+================================= */
+
+body.dark-mode {
+  background: #111827;
+  color: #f9fafb;
+}
+
+
+/* =================================
+   App
+================================= */
+
+body.dark-mode .app {
+  background: #111827;
+}
+
+
+/* =================================
+   Main Content
+================================= */
+
+body.dark-mode .main-content {
+  background: #111827;
+}
+
+
+/* =================================
+   Navbar
+================================= */
+
+body.dark-mode .navbar {
+  background: #111827;
+  border-bottom: 1px solid #374151;
+}
+
+body.dark-mode .nav-links a {
+  color: #f9fafb;
+}
+
+body.dark-mode .logo {
+  color: #f9fafb;
+}
+
+
+/* =================================
+   Settings
+================================= */
+
+body.dark-mode .settings-page {
+  background: #111827;
+}
+
+body.dark-mode .settings-container {
+  background: transparent;
+}
+
+body.dark-mode .settings-section h2 {
+  color: #f9fafb;
+}
+
+body.dark-mode .settings-card {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+body.dark-mode .settings-text h3 {
+  color: #f9fafb;
+}
+
+body.dark-mode .settings-text p {
+  color: #9ca3af;
+}
+
+
+/* =================================
+   Language Dropdown
+================================= */
+
+body.dark-mode .language-select {
+  background: #111827;
+  color: #f9fafb;
+  border-color: #4b5563;
+}
+
+
+/* =================================
+   Account
+================================= */
+
+body.dark-mode .my-account-page {
+  background: #111827;
+}
+
+body.dark-mode .profile-card,
+body.dark-mode .account-menu-item {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+body.dark-mode .profile-info h2,
+body.dark-mode .menu-text h3 {
+  color: #f9fafb;
+}
+
+body.dark-mode .profile-info p,
+body.dark-mode .menu-text p {
+  color: #9ca3af;
+}
+
+
+/* =================================
+   Orders
+================================= */
+
+body.dark-mode .orders-page {
+  background: #111827;
+}
+
+body.dark-mode .order-card {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+body.dark-mode .order-top h2 {
+  color: #f9fafb;
+}
+
+body.dark-mode .order-top p,
+body.dark-mode .order-info {
+  color: #9ca3af;
+}
+
+
+/* =================================
+   Cart
+================================= */
+
+body.dark-mode .cart-page {
+  background: #111827;
+}
+
+body.dark-mode .cart-card,
+body.dark-mode .cart-summary {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+body.dark-mode .cart-card h3,
+body.dark-mode .cart-summary h2 {
+  color: #f9fafb;
+}
+
+
+/* =================================
+   Footer
+================================= */
+
+body.dark-mode .footer {
+  background: #0f172a;
+  color: #f9fafb;
+}
+
+body.dark-mode .footer p {
+  color: #cbd5e1;
+}
+

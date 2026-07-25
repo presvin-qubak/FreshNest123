@@ -1,0 +1,97 @@
+.not-found-container {
+
+  min-height:90vh;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  background:
+  linear-gradient(
+    135deg,
+    #f0fdf4,
+    #ffffff
+  );
+
+}
+
+
+
+.not-found-card {
+
+  text-align:center;
+
+  padding:50px;
+
+  border-radius:20px;
+
+  background:white;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.15);
+
+}
+
+
+
+.not-found-card h1 {
+
+  font-size:100px;
+
+  margin:0;
+
+  color:#22c55e;
+
+}
+
+
+
+.not-found-card h2 {
+
+  font-size:32px;
+
+  color:#166534;
+
+}
+
+
+
+.not-found-card p {
+
+  color:#666;
+
+  font-size:18px;
+
+}
+
+
+
+.not-found-card button {
+
+  margin-top:25px;
+
+  padding:12px 35px;
+
+  border:none;
+
+  border-radius:25px;
+
+  background:#22c55e;
+
+  color:white;
+
+  font-size:16px;
+
+  cursor:pointer;
+
+}
+
+
+
+.not-found-card button:hover {
+
+  background:#15803d;
+
+}
