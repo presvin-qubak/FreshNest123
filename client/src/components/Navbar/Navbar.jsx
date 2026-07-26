@@ -10,6 +10,7 @@ import "./Navbar.css";
 
 import { StoreContext } from "../../context/StoreContext";
 import { useLanguage } from "../../context/LanguageContext";
+import { getImageUrl } from "../../utils/getImageUrl";
 
 const Navbar = () => {
 
@@ -196,7 +197,7 @@ const Navbar = () => {
                   >
 
                     <img
-                      src={item.image}
+                      src={getImageUrl(item.image)}
                       alt={item.name}
                     />
 

@@ -7,6 +7,7 @@ import {
   FaStar,
   FaCheckCircle,
 } from "react-icons/fa";
+import { getImageUrl } from "../../utils/getImageUrl";
 
 const ProductCard = ({ product }) => {
   const {
@@ -39,7 +40,7 @@ const ProductCard = ({ product }) => {
       {/* Product Image */}
       <div className="image-container">
         <img
-          src={product.image}
+          src={getImageUrl(product.image)}
           alt={product.name}
           className="product-image"
         />

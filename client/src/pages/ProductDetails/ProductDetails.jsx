@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { StoreContext } from "../../context/StoreContext";
+import { getImageUrl } from "../../utils/getImageUrl";
 import "./ProductDetails.css";
 
 
@@ -55,7 +56,7 @@ const ProductDetails = () => {
 
 
       <img
-        src={product.image}
+        src={getImageUrl(product.image)}
         alt={product.name}
       />
 

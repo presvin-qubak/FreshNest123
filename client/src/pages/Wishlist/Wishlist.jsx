@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { StoreContext } from "../../context/StoreContext";
 import { FaHeart, FaTruck, FaStar } from "react-icons/fa";
+import { getImageUrl } from "../../utils/getImageUrl";
 import "./Wishlist.css";
 
 const Wishlist = () => {
@@ -56,7 +57,7 @@ const Wishlist = () => {
                 key={item.id}
               >
                 <img
-                  src={item.image}
+                  src={getImageUrl(item.image)}
                   alt={item.name}
                 />
 

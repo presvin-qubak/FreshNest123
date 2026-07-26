@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { StoreContext } from "../../context/StoreContext";
+import { getImageUrl } from "../../utils/getImageUrl";
 import "./Cart.css";
 
 const Cart = () => {
@@ -51,7 +52,7 @@ const Cart = () => {
               key={item.id}
             >
               <img
-                src={item.image}
+                src={getImageUrl(item.image)}
                 alt={item.name}
               />
 
