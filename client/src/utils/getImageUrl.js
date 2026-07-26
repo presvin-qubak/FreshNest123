@@ -6,8 +6,15 @@ export const getImageUrl = (image) => {
       return image;
     }
 
+    const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
     const normalizedImage = image.replace(/^\/+/, "");
-    return `${import.meta.env.BASE_URL}${normalizedImage}`;
+    const basePrefix = basePath.replace(/^\/+/, "");
+
+    if (normalizedImage.startsWith(basePrefix)) {
+      return `/${normalizedImage}`;
+    }
+
+    return `${basePath}/${normalizedImage}`;
   }
 
   if (typeof image === "object") {
